@@ -478,7 +478,7 @@ img {
 }
 
 .footer-container {
-
+    display: flex;
 }
 
 .footer-logo {
@@ -492,6 +492,10 @@ img {
     text-transform: uppercase;
     color: #4D5AE5;
     text-decoration: none;
+    height: 24px;
+
+    
+    
 }
 
 .web {
@@ -505,7 +509,56 @@ img {
     color:#F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
 
 }
+
+.footer-social {
+
+}
+
+.footer-social-text {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    
+    text-decoration: none;
+    height: 24px;
+}
+
+
+.footer-people-icon {
+    padding-top: 16px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-list-icon {
+    display: block;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    background-color: rgba(77, 90, 229, 1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.footer-social-icon {
+    fill: rgba(244, 244, 253, 1);
+}
+
+.footer-social-list-icon:hover,
+.footer-social-list-icon:focus {
+    background-color: rgba(64, 75, 191, 1);
+}
+
 
 /*#endregion footer*/
