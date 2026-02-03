@@ -162,7 +162,7 @@ img {
     padding-bottom: 188px;
       
     background-image: linear-gradient(rgba(66, 55, 46, 0.7), rgba(46, 47, 66, 0.7)),
-       url(/goit-markup-hw-04/images/people-office.jpg), url(/goit-markup-hw-04/images/Dark-bg.jpg);
+       url(./images/people-office.jpg), url(./images/Dark-bg.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -387,6 +387,7 @@ img {
 
 .social-list-icon:hover,
 .social-list-icon:focus {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(64, 75, 191, 1);
 }
 
@@ -453,6 +454,7 @@ img {
 }
 
 .portfolio-list-overlay {
+    padding: 40px 32px;
     position: absolute;
     color: rgba(244, 244, 253, 1);
     background-color: rgba(77, 90, 229, 1);
@@ -462,7 +464,7 @@ img {
     height: 100%;
     transform: translateY(100%);
     overflow: auto;
-    transition: transform 300ms ease-in-out;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .portfolio-list-overlay {
@@ -516,7 +518,8 @@ img {
 }
 
 .footer-social {
-
+    margin: 0;
+    padding-left: 120px;
 }
 
 .footer-social-text {
