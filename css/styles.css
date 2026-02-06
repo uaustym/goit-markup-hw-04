@@ -158,12 +158,15 @@ img {
 
 .title {
     margin: 0 auto;
+    max-width: 1440px;
+    align-items: center;
     background-color: #2E2F42;
     text-align: center;
     border-bottom: 1px solid #E7E9FC;
     padding-top: 188px;
     padding-bottom: 188px;
-      
+    
+    background-size: contain;
     background-image: linear-gradient(rgba(66, 55, 46, 0.7), rgba(46, 47, 66, 0.7)),
        url(../images/people-office.jpg), url(./images/Dark-bg.jpg);
     background-repeat: no-repeat;
@@ -382,6 +385,7 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -391,7 +395,7 @@ img {
 
 .social-list-icon:hover,
 .social-list-icon:focus {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     background-color: rgba(64, 75, 191, 1);
 }
 
@@ -433,6 +437,11 @@ img {
         0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
+.portfolio-list-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .image-portfolio {
     position: relative;
     overflow: hidden;
@@ -480,6 +489,7 @@ img {
 
 .portfolio-list-item:hover .portfolio-list-overlay {
     transform: translateY(0%);
+    
 }
 
 /*#endregion portfolio*/
@@ -539,7 +549,7 @@ img {
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     
     
@@ -565,7 +575,7 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
@@ -574,7 +584,7 @@ img {
 
 .footer-social-list-icon:hover,
 .footer-social-list-icon:focus {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     background-color: #31d0aa;
 }
 
